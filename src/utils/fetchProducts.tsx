@@ -10,5 +10,6 @@ export default async function fetchProducts(): Promise<Product[]> {
     return products;
   } catch (error) {
     console.error("Error fetching products:", error);
+    throw error;
   }
 }
